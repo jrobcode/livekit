@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: livekit-token-server
+    env: node
+    buildCommand: npm install
+    startCommand: node index.js
+    plan: free
+    envVars:
+      - key: LIVEKIT_URL
+        value: wss://railroad-r4akgbh8.livekit.cloud
+      - key: LIVEKIT_API_KEY
+        value: APIjCGsLbhPQfAr
+      - key: LIVEKIT_API_SECRET
+        value: YOUR_SECRET_HERE
